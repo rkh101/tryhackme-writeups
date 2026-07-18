@@ -1,6 +1,6 @@
-## Techniques
+## Windows Privilege Escalation
 
-| Technique | Root Cause | Result | Write-up |
+| Room | Technique | Operating System | Write-up |
 |---|---|---|---|
-| Weak Autorun Permissions | `Everyone` had `FILE_ALL_ACCESS` over an executable referenced by a machine-wide Run key | Payload executed under the privileged logon account | [Read Write-up](weak-autorun-permissions/README.md) |
-| AlwaysInstallElevated | Windows Installer elevation enabled in both `HKLM` and `HKCU` | Malicious MSI executed as `NT AUTHORITY\SYSTEM` | [Read Write-up](always-install-elevated/README.md) |
+| Windows PrivEsc Arena | Weak Autorun Permissions | Windows 7 | [View Write-up](rooms/windows-privesc-arena/weak-autorun-permissions/README.md) |
+| Windows PrivEsc Arena | AlwaysInstallElevated | Windows 7 | [View Write-up](rooms/windows-privesc-arena/always-install-elevated/README.md) |
