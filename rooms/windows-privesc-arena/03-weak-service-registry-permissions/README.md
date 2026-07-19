@@ -725,6 +725,29 @@ This does not necessarily mean that the executable failed to run.
 
 In this task, the relevant command executed successfully before the service completed a normal state transition, as demonstrated by the modified Administrators group membership.
 
+## Windows Version Compatibility
+
+> This lab was tested on Windows 7 Professional. The Registry and service-control commands remain conceptually valid on newer Windows versions; however, the replacement executable used in this task may not operate reliably as a service on Windows 10 or Windows 11.
+
+A Windows service executable must implement the Windows Service API and communicate correctly with the Service Control Manager. This normally includes:
+
+- Calling `StartServiceCtrlDispatcher`
+- Providing a `ServiceMain` entry point
+- Registering a control handler with `RegisterServiceCtrlHandler` or `RegisterServiceCtrlHandlerEx`
+- Reporting service states through `SetServiceStatus`
+
+The Service Control Manager expects the executable to establish this connection shortly after it starts. Microsoft documents that a service process should call `StartServiceCtrlDispatcher` within approximately 30 seconds. :contentReference[oaicite:0]{index=0}
+
+A basic executable that only performs a command, without implementing the required service dispatcher, control handler, and status-reporting logic, is not a fully compliant Windows service executable.
+
+On Windows 7, such an executable may still begin running and execute its payload before the Service Control Manager determines that it failed to behave as a valid service. This explains why the privilege-changing command may succeed even while the service remains in `START_PENDING`.
+
+On Windows 10 and Windows 11, the same incomplete executable should not be expected to start reliably as a service. The Service Control Manager may reject or time out the process because it does not connect to the service dispatcher or respond correctly to service-control requests, commonly resulting in a service startup failure such as Error 1053.
+
+Therefore, the limitation is not caused by different exploitation commands. It is caused by the replacement executable not fully implementing the Windows service lifecycle and required Service Control Manager communication.
+
+> The underlying weak Registry-permission vulnerability can still exist on Windows 10 or Windows 11. However, exploitation on those systems requires a properly implemented Windows service executable that uses the required Windows Service APIs.
+
 ---
 
 # 14. Security Classification
