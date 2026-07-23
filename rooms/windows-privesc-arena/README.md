@@ -15,7 +15,7 @@ Each task is documented separately with the attack flow, technical explanation, 
 | 1 | Weak Autorun Permissions | Code executed under a privileged user context | [Read Write-up](01-weak-autorun-permissions/README.md) |
 | 2 | AlwaysInstallElevated | MSI payload executed as `NT AUTHORITY\SYSTEM` | [Read Write-up](02-always-install-elevated/README.md) |
 | 3 | Weak Service Registry Permissions | The local user was added to Administrators | [Read Write-up](03-weak-service-registry-permissions/README.md) |
-| 4 | Weak Service File Permissions | `Everyone` had `FILE_ALL_ACCESS` over a LocalSystem service executable | The replacement executable added the user to Administrators | [Read Write-up](04-weak-service-file-permissions/README.md) |
+| 4 | Weak Service File Permissions | The replacement service binary added the user to Administrators | [Read Write-up](04-weak-service-file-permissions/README.md) |
 
 ## Main Concepts
 
