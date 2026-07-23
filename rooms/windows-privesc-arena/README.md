@@ -16,6 +16,7 @@ Each task is documented separately with the attack flow, technical explanation, 
 | 2 | AlwaysInstallElevated | MSI payload executed as `NT AUTHORITY\SYSTEM` | [Read Write-up](02-always-install-elevated/README.md) |
 | 3 | Weak Service Registry Permissions | The local user was added to Administrators | [Read Write-up](03-weak-service-registry-permissions/README.md) |
 | 4 | Weak Service File Permissions | The replacement service binary added the user to Administrators | [Read Write-up](04-weak-service-file-permissions/README.md) |
+| 5 | Weak Startup Folder Permissions | The payload executed under the privileged logon account | [Read Write-up](05-weak-startup-folder-permissions/README.md) |
 
 ## Main Concepts
 
