@@ -1,4 +1,4 @@
-# Weak Startup Folder Permissions — Windows Privilege Escalation
+# Weak Startup Folder Permissions (Windows Privilege Escalation)
 
 > **Platform:** TryHackMe  
 > **Room:** Windows PrivEsc Arena  
