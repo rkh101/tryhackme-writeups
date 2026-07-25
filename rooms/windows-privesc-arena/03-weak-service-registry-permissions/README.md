@@ -1,4 +1,4 @@
-# Weak Service Registry Permissions — Windows Privilege Escalation
+# Weak Service Registry Permissions (Windows Privilege Escalation)
 
 > **Platform:** TryHackMe  
 > **Room:** Windows PrivEsc Arena  
