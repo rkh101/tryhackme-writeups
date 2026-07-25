@@ -1,4 +1,4 @@
-# AlwaysInstallElevated — Windows Privilege Escalation
+# AlwaysInstallElevated (Windows Privilege Escalation)
 
 > **Platform:** TryHackMe  
 > **Room:** Windows PrivEsc Arena  
