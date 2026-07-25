@@ -1,4 +1,4 @@
-# Weak Autorun Permissions — Windows Privilege Escalation
+# Weak Autorun Permissions (Windows Privilege Escalation)
 
 > **Platform:** TryHackMe  
 > **Room:** Windows PrivEsc Arena  
