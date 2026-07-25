@@ -1,4 +1,4 @@
-# Weak Service File Permissions — Windows Privilege Escalation
+# Weak Service File Permissions (Windows Privilege Escalation)
 
 > **Platform:** TryHackMe  
 > **Room:** Windows PrivEsc Arena  
