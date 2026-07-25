@@ -1,4 +1,4 @@
-# Windows PrivEsc Arena — TryHackMe
+# Windows PrivEsc Arena (TryHackMe)
 
 > **Platform:** TryHackMe  
 > **Category:** Windows Local Privilege Escalation  
