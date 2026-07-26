@@ -17,7 +17,7 @@ Each task is documented separately with the attack flow, technical explanation, 
 | 3 | Weak Service Registry Permissions | The local user was added to Administrators | [Read Write-up](03-weak-service-registry-permissions/README.md) |
 | 4 | Weak Service File Permissions | The replacement service binary added the user to Administrators | [Read Write-up](04-weak-service-file-permissions/README.md) |
 | 5 | Weak Startup Folder Permissions | The payload executed under the privileged logon account | [Read Write-up](05-weak-startup-folder-permissions/README.md) |
-| 6 | DLL Search Order Hijacking | A privileged service searched a user-writable directory for a missing DLL | The planted DLL added the user to Administrators | [Read Write-up](06-dll-search-order-hijacking/README.md) |
+| 6 | DLL Search Order Hijacking | The planted DLL was loaded by a privileged service and added the user to Administrators | [Read Write-up](06-dll-search-order-hijacking/README.md) |
 
 ## Main Concepts
 
