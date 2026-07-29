@@ -18,6 +18,7 @@ Each task is documented separately with the attack flow, technical explanation, 
 | 4 | Weak Service File Permissions | The replacement service binary added the user to Administrators | [Read Write-up](04-weak-service-file-permissions/README.md) |
 | 5 | Weak Startup Folder Permissions | The payload executed under the privileged logon account | [Read Write-up](05-weak-startup-folder-permissions/README.md) |
 | 6 | DLL Search Order Hijacking | The planted DLL was loaded by a privileged service and added the user to Administrators | [Read Write-up](06-dll-search-order-hijacking/README.md) |
+| 7 | Service Escalation - binPath | Weak service permissions allowed the user to modify the service `binPath` and execute a privileged command | [Read Write-up](07-service-escalation-binpath/README.md) |
 
 ## Main Concepts
 
