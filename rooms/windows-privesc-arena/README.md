@@ -19,6 +19,7 @@ Each task is documented separately with the attack flow, technical explanation, 
 | 5 | Weak Startup Folder Permissions | The payload executed under the privileged logon account | [Read Write-up](05-weak-startup-folder-permissions/README.md) |
 | 6 | DLL Search Order Hijacking | The planted DLL was loaded by a privileged service and added the user to Administrators | [Read Write-up](06-dll-search-order-hijacking/README.md) |
 | 7 | Service Escalation - binPath | Weak service permissions allowed the user to modify the service `binPath` and execute a privileged command | [Read Write-up](07-service-escalation-binpath/README.md) |
+| 8 | Service Escalation - Unquoted Service Paths | An unquoted `LocalSystem` service path allowed `common.exe` to execute before the intended service binary | [Read Write-up](08-service-escalation-unquoted-service-paths/README.md) |
 
 ## Main Concepts
 
